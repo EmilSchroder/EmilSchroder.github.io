@@ -1,0 +1,50 @@
+h1 {
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 40px;
+    padding: 10px;
+    color: black;
+    background-color: white; 
+}
+
+.nav-bar{
+    border-top-style: solid;
+    border-top-color: hotpink;
+    width: 400px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-bar a {
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.active {
+    background-color: hotpink;
+    color: rgb(73, 65, 65);
+  }
+
+p {
+    width: 400px;
+}
+
+li {
+    width: 400px;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+}
