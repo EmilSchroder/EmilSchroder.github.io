@@ -1,20 +1,30 @@
 h1 {
-    width: 580x;
+    width: 50%;
     display: flex;
-    justify-content: flex-start;
-    margin: 0;
+    justify-content: center;
+    margin: auto;
     font-size: 40px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     color: black;
     background-color: white; 
+}
+
+h2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;  
+    padding: 10px 0px 10px 0px;
 }
 
 .nav-bar{
     border-top-style: solid;
     border-top-color: hotpink;
-    width: 600px;
-    overflow: hidden;
+    width: 50%;
+    margin: auto;
     background-color: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-bar a {
@@ -22,7 +32,7 @@ h1 {
     float: left;
     display: block;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 25px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -30,7 +40,6 @@ h1 {
 .nav-bar a:hover{
     background-color: antiquewhite;
     color: black;
-    font-size: 20px;
 }
 
 .active {
@@ -39,13 +48,52 @@ h1 {
   }
 
 p {
-    width: 400px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0px 0px 0px;
 }
 
-li {
-    width: 400px;
-    list-style-type: disc;
-    list-style-position: inside;
-    text-indent: -1em;
-    padding-left: 1em;
+
+ul{
+    width: 50%;
+    margin: auto;
 }
+
+.content{
+    padding: 20px 0px 0px 0px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.blog-link{
+    display: inline-block;
+}
+
+figure{  
+    width: 200px;
+    height: 100%;
+}
+
+figcaption{
+    background-color: black;
+    width: inherit;
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+
+
