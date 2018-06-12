@@ -1,0 +1,30 @@
+.overlord{
+    padding: 50px 0px;
+    height: 70px;
+    text-align: center;
+}
+
+.header{
+    color: white;
+    background-color: black;
+    height: 60px;
+}
+
+.navigation{
+    color: black;
+    background-color: hotpink;
+    padding: 7px 5px 0 5px;
+    height: 30px;
+}
+
+.image{
+    height: 50px;
+}
+
+
+
+.nav-entry{
+    padding: 10px 5px 0 5px;
+    display: inline;
+    color: white
+}
