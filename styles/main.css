@@ -1,3 +1,7 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
 .overlord{
     padding: 50px 0px;
     height: 70px;
@@ -8,6 +12,8 @@
     color: white;
     background-color: black;
     height: 60px;
+    text-align: left;
+    padding: 0 0 0 5px;
 }
 
 .navigation{
@@ -17,8 +23,10 @@
     height: 30px;
 }
 
-.image{
-    height: 50px;
+.welcome{
+    height: 500px;
+    background-image: url("../images/town-picture.jpg");
+    
 }
 
 
