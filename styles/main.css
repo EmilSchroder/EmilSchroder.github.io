@@ -1,9 +1,10 @@
 body{
     font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
 }
 
 .overlord{
-    padding: 50px 0px;
+    padding: 0px;
     height: 70px;
     text-align: center;
 }
@@ -19,9 +20,14 @@ body{
 .navigation{
     color: black;
     background-color: hotpink;
-    padding: 7px 5px 0 5px;
+    padding: 7px 0px 30px 0px;
     height: 30px;
 }
+
+.blog{
+    text-align: left;
+}
+
 
 .welcome{
     height: 500px;
@@ -29,10 +35,21 @@ body{
     
 }
 
-
-
 .nav-entry{
-    padding: 10px 5px 0 5px;
+    padding: 10px 5px 10px 5px;
     display: inline;
-    color: white
+    color: black;
+    text-decoration: none;
+}
+
+.nav-entry:hover {
+    color: black;
+    background-color: honeydew;
+    margin: 0;
+}
+
+.active{
+    background-color: black;
+    color: white;
+    padding: 11px 5px;
 }

@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogtown - Technical</title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
+        <title></title>
+        <meta charset="UTF-8">
+    
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+
+    </head>
+    <body>
+
+            <div class="overlord">
+
+                <div class="container">
+                          
+                    <div class="row u-full-width">
   
-  <body>
-      <h1>
-          Technical
-      </h1>
-      <div class="nav-bar">
-          <a href="../index.html">Home</a>
-          <a href="reflections-homepage.html">Reflections</a>
-          <a href="c1-time-and-habits-blog.html">Time and Habits</a>
-          <a href="technical-home-page.html" class="active">Technical</a>
-  </div>
-      <!--- House for content -->
-      <div class="content">
-        <!--- Blog materials-->
-        <div class="blog-link">
-          <!--- Picture  -->
-          <figure>
-          <a href="t2-html-css-dom-p1.html"><img src="../styles/thumbnailplaceholder2.png"></a>
-          <!-- Caption -->
-          <figcaption><a href="t2-html-css-dom-p1.html">HTML, CSS and DOM</a></figcaption>
-        </figure>
-        </div>
-        <!-- Rinse, repeat-->
-        <div class="blog-link">
-            <figure>
-                <a href="t2-html-css-dom-p2.html"><img src="../styles/thumbnailplaceholder3.png"></a>
-                <!-- Caption -->
-                <figcaption><a href="t2-html-css-dom-p1.html">Grids and Semantics</a></figcaption>
-              </figure>
-          </div>
-            </div>
-        </div>
-      </div>
-  </body>
+                        <nav class="six columns navigation">
+                            <a class="nav-entry" href="../index.html">Home</a>
+                            <a class="nav-entry active" >Technical</a>
+                            <a class="nav-entry" href="c1-time-and-habits-blog.html">Time and Habits</a>
+                            <a class="nav-entry" href="reflections-homepage.html">Reflections</a>
+                          </nav>
+
+                        <div class="welcome"></div>
+
+                        <div class="blog">
+                            <h2>
+                                HTML, CSS and DOM
+                            </h2> 
+                            <p>
+                                In short in a webpage HTML sets the structure, makes it pretty, and the DOM acts as an interface with HTML 
+                                so that other programmes can act upon it.<br>
+                                This set of friends can be thought of like an external hardrive. The HTML is the circuit board, CSS is the
+                                box that houses it, and the DOM is the USB dongle that lets it connect into things like the TV or computer.
+                            </p>
+                            <h2>
+                                Boxifying Design
+                            </h2>
+                            <p>
+                                Boxifying is what it sounds like, turning an open space (in this case the webpage) into a set of rectangles 
+                                with their own unqiue place and, ideally, purpose. Breaking it down into these boxes allows easier design of the page
+                                as the boxes are self container and only the size, margins and padding of a box impacts other boxes, not what is in it.
+                            </p>
+
+                            <h2>
+                                Grid based design
+                            </h2>
+                            <p>
+                                Grids are key to organisation on the webpage. They allow designers to easily create patterns and symmetry in a way
+                                that is pleasing to the user and simple to represent on a webpage.<br>
+                                Grids also provide a conceptual way to scale up and down page view. Responsive webpage layouts are booming as the habits of
+                                consumers move more towards consuming digital media on mobile devices, rather than traditional computers. Needing to represent
+                                webpages in both these fashions means needing to adopt a shared design language and practice. Grids, with their ability to scale 
+                                up and down at will, are a good fit for this.
+                            </p>
+                            <h2>
+                                Semantic structure
+                            </h2>
+                            <p>
+                                Semantic tags in HTML are the tags that give the reader and the browser deeper knowledge about the actual purpose of the content being 
+                                displayed and the structure is how this is all organised in terms of parent/child relationships. Semantic tags have come about so that 
+                                browers are able to represent information in a more meaningful way. When using generic tags like div, there is no context around what 
+                                the content may be or relate to. To add context a semantic tag can be used; for example h1 indicates that what is written is a header 
+                                for the whole page, or time denotes a date/time. This information is of particular value to search engines that want to represent 
+                                meaningful information to their users.
+                            </p>
+                        </div>
+
+                      </div>
+
+                </div>
+              </div>    
+
+    </body>
+</html>
