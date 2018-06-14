@@ -5,23 +5,17 @@ body{
 
 .overlord{
     padding: 0px;
+    margin: 0;
     height: 70px;
     text-align: center;
 }
 
-.header{
-    color: white;
-    background-color: black;
-    height: 60px;
-    text-align: left;
-    padding: 0 0 0 5px;
-}
 
 .navigation{
     color: black;
     background-color: hotpink;
-    padding: 7px 0px 30px 0px;
-    height: 30px;
+    padding: 7px 0px 5px 0px;
+    margin: 0;
 }
 
 .blog{
@@ -30,13 +24,21 @@ body{
 
 
 .welcome{
-    height: 500px;
+    height: 550px;
     background-image: url("../images/town-picture.jpg");
+    padding: 0 0 0 0;
+   margin: 0;
+}
+
+.sidebar{
     
+    color: white;
+    background-color: black;
+    margin: 0;
 }
 
 .nav-entry{
-    padding: 10px 5px 10px 5px;
+    padding: 10px 5px 8px 5px;
     display: inline;
     color: black;
     text-decoration: none;
@@ -48,8 +50,18 @@ body{
     margin: 0;
 }
 
-.active{
+/*.active{
     background-color: black;
     color: white;
     padding: 11px 5px;
+}*/
+
+@media (min-width: 550px){
+.sidebar{
+    height: 550px;
+    float: left;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    text-align: center;
+}
 }
