@@ -46,7 +46,7 @@ button:focus{
 }
 
 #brac{
-    background-color: green;
+    background-color: rgb(42, 163, 42);
     transition: all .15s linear;
 }
 
@@ -56,7 +56,7 @@ button:focus{
 }
 
 #game{
-    background-color: blue;
+    background-color: rgb(43, 43, 221);
     transition: all 0.15s linear;
 }
 
