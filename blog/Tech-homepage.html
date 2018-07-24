@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</head>
+<body class='auxpage'>
+
+        <div class='container-fluid'>
+                <nav class='navbar fixed-top navbar-expand-lg navbar-light bg-light'>
+                        <a class='nondef' href='trialindex.html'>
+                            <span class='navbar-brand'>Emil Schroder</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class='navbar-toggler-icon'></span>
+                        </button>
+                        <div class='collapse navbar-collapse' id='navbarNav'>
+                            <ul class='navbar-nav'>
+                                <li class='nav-item active'>
+                                        <a class='nav-link' href='#'>Technical</a>
+                                </li>
+                                <li class='nav-item'>
+                                        <a class='nav-link' href='reflections-homepage.html'>Reflections</a>
+                                </li>
+                                <li class='nav-item'>
+                                        <a class='nav-link' href='#'>Games</a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                                        <h1>Technical Blog</h1>
+                                        <br>
+                                        <h2>Scope in Javascript</h2>
+                                        <p>
+                                            Scope translates to visibility for variables in code. There are two scopes in Javascript; global and 
+                                            local. Global variables are variables declared outside of a function and can be seen and 
+                                            accessed from anywhere inside your code.<br>
+                                            Functions have their own scope, so any variable defined within this scope (i.e. defined within the function) is 
+                                            localised to that function, hence the name local variable. If that function also calls any 
+                                            subfunctions then the variable is visible from them as well. It pays to note that a variable declared inside a subfunction 
+                                            will not visible to the superfunction as its own more localised scope.
+                                        </p>
+                                <hr>
+                                            <h2>Javascript Language</h2>
+                                            <h3>Bracket Notation</h3>
+                                            <p>
+                                                
+                                                <h4>Round Brackets <code>()</code></h4>
+                                                There are a few serperate areas where round brakcets crop up.
+                                                They can be used for loops to hold true/false statements i.e. 
+                                                <code>if(n<5)</code>. In other loops they can have initial conditions and 
+                                                iteration steps as well i.e. <code>for (var n=0, n<5, n++)</code>.
+                                                In functions they contain the input parameters that the function requires to run like 
+                                                <code>function carrots (water, soil, seeds){};</code>. Finally the can be used in the pure 
+                                                mathematical way to show which operation is prioritised; the following would sum <code>b</code> and
+                                                <code>c</code> together before subtracting the total from <code>a</code>:<br>
+                                                <code>x = a - (b + c);</code>
+                                            </p>
+                                            <p>
+                                                <h4>Square Brackets<code>[]</code></h4>
+                                                Square brackets are often seen setting up arrays and accessing elements in those arrays like numbers or objects. Arrays are 
+                                                a structured data format so every element has a fixed position where the first element is denoted as 
+                                                <code>Array[0]</code> and the sequential elements are counted up from there so that <code>nth element = Array[n-1]</code>.<br>
+                                            </p>
+                                            <p>
+                                                <h4>Curly Brackets<code>{}</code></h4>
+                                                Curly brackets are used to contain processes that need to be run or to set up objects. For containg 
+                                                processes take a <code>for</code> loop. Everything that needs to be run according to the loops instructions happens within
+                                                the defined curly brackets.<br>
+                                                For example <code>for (var i=0, i<10, i++){count++}</code> increases the <code>count</code> by one while the loop conditions remain true.<br>
+                                                For setting up objects a new variable is declared with the properties of the object (once the curly brackets get involved the variable becomes
+                                                an object) listed within the curly brackets. This <code>tree</code> is an example object:<br>
+                                                <code>var tree = {branches: 100, leaves: 1000, trunk: 1};</code>
+                                            </p>
+                                            <p>
+                                                <h4>Single and Double Quote Marks - <code>''</code> & <code>""</code></h4>
+                                                Everything inside quote marks is considered a string. They can be used interchangably.
+                                            </p>
+                                <hr>
+                                            <h2>Getting Blocked</h2>
+                                            <p>
+                                                In sprint 4 I was horribly blocked by one of the practice JS questions. There was
+                                                something about it where I couldn't work out how the syntax was supposed to be ordered. I started
+                                                with trial and error but then moved on to psuedocode but no luck.<br>
+                                                There was fortunatley a lot of resources online and I was able to find a similar question that 
+                                                incorporated the same syntax which I was able to mimic and make fit.<br>
+                                                Solving it was a huge relief, though I am glad for the struggle because it is the dread of going
+                                                through that drawn-out thought process again that really cements the knowledge in your mind.
+                                                I didn't learn that much in a meta sense (of course I learnt the necessary syntax to resolve the issue)
+                                                but it is good to reaffirm that sticking to it will get you the results you want.
+                                            </p>
+                                <hr>
+                                            <h2>Javascript</h2>
+                                            <p>
+                                                Javascript is a language that can create and alter objects
+                                                and variables. It differs from HTML in that if doesn't outline 
+                                                a structure for webpage or work in a tag based way. It is also
+                                                different from CSS as it can be used to alter existing objects
+                                                rather than just style them.<br>
+                                                Loops work in an intuative way where you set initial conditions, 
+                                                constraints and an iteration pattern, and then allow it perform its
+                                                action on the object or variable that is within the loop. For example
+                                                you can use the idea of spreading butter on toast. You start with no 
+                                                butter on your and you keep spreading more on until the toast is covered
+                                                in butter.
+                                            </p>
+                                            <p>
+                                                Arrays and objects are both ways of storing data in Javascript. Arrays have
+                                                elements are are stored in an ordered set where the zeroth (initial or first) element
+                                                is at the front of the set with the n-1th at the end. To access an element you
+                                                can call its position in the line up.<br>
+                                                Object have properties that are denoted by a name, but don't have a purposeful order.
+                                                There are a couple of ways to call properties from objects; the first is the dot notation
+                                                for a string or conversion of a string i.e. myCouch.redCushion. The second is bracket
+                                                notation and can be used when the property is not a string like in this example 
+                                                where there is a space between the words <br>i.e. myCouch["Red Cushion"].<br>
+                                                Functions are sets of code where you plug in variables and they return an answer or 
+                                                set of answers (depending of specifications) based off those variables (typically).
+                                                They are useful as black boxes where you can throw variables at them and get meaningful
+                                                answers in return.
+                                            </p>
+                                <hr>
+                                            <h2>Frameworks</h2>
+                                            <p>
+                                                Frameworks give a pre-configured base and rules set to allow you to start building websites quickly and simply. The developer benefits from
+                                                not having to spend time building the same functionality from scratch. The downsides are a standarised model which can leave the design
+                                                feeling a bit bland.
+                                            </p>
+                                            <h2>Responsive Websites</h2>
+                                            <p>
+                                                Website designers must have an idea about how people are viewing their content which means the behavior and habits of the consumers
+                                                must be acknowledged when a website is being created. If your target audience is split between browsing on their phones, tablets and computers
+                                                then you need a way of making sure all three are accomodated. Responsive websites are designed to allow the aesthetics and functionality of a website
+                                                to remain intact no matter the size of the viewing screen.<br>
+                                                <a href="https://www.hallaminternet.com/google-analytics-desktop-vs-mobile-vs-tablet-metrics/">Mobile device users are now surpassing desktop users</a>
+                                                and with the lesser processing power of a phone compared to a computer their is a rise in "mobile-first" design. This assumes the mobile device
+                                                is the default viewer and has the developer put its design considerations first.
+                                            </p>
+                                            <h2>Wireframes</h2>
+                                            <p>
+                                                Wireframes are quick sketches of the intended layout of your webpage. For simplicity it can just be a monochromatic drawing of where you intend 
+                                                to put certain boxes that will hold content. I found that many of the features I had drawn up in the wireframes surpassed my technical knowledge
+                                                so comprimised quite heavily to produce what I have.
+                                            </p>
+                                            <figure class="wireframe">
+                                                    <img class="wireframe" src="wireframe-index-page-desktop.JPG" alt="Home wireframe - desktop">
+                                            </figure>
+                                            <figure class="wireframe">
+                                                    <img class="wireframe" src="wireframe-blog-page-desktop.JPG" alt="Blog wireframe - desktop">
+                                            </figure>
+                                            <figure class="wireframe">
+                                                    <img class="wireframe" src="wireframe-index-page-mobile.JPG" alt="Home wireframe - mobile">
+                                            </figure>
+                                            <figure class="wireframe">
+                                                    <img class="wireframe" src="wireframe-blog-page-mobile.JPG" alt="Blog wireframe - mobile"> 
+                                            </figure>
+                                    
+                                <hr>
+                                            <h2>
+                                                    HTML, CSS and DOM
+                                                </h2> 
+                                                <p>
+                                                    In short in a webpage HTML sets the structure, makes it pretty, and the DOM acts as an interface with HTML 
+                                                    so that other programmes can act upon it.<br>
+                                                    This set of friends can be thought of like an external hardrive. The HTML is the circuit board, CSS is the
+                                                    box that houses it, and the DOM is the USB dongle that lets it connect into things like the TV or computer.
+                                                </p>
+                                                <h2>
+                                                    Boxifying Design
+                                                </h2>
+                                                <p>
+                                                    Boxifying is what it sounds like, turning an open space (in this case the webpage) into a set of rectangles 
+                                                    with their own unqiue place and, ideally, purpose. Breaking it down into these boxes allows easier design of the page
+                                                    as the boxes are self container and only the size, margins and padding of a box impacts other boxes, not what is in it.
+                                                </p>
+
+                                <hr>
+                                            <h2>
+                                                    Grid based design
+                                                </h2>
+                                                <p>
+                                                    Grids are key to organisation on the webpage. They allow designers to easily create patterns and symmetry in a way
+                                                    that is pleasing to the user and simple to represent on a webpage.<br>
+                                                    Grids also provide a conceptual way to scale up and down page view. Responsive webpage layouts are booming as the habits of
+                                                    consumers move more towards consuming digital media on mobile devices, rather than traditional computers. Needing to represent
+                                                    webpages in both these fashions means needing to adopt a shared design language and practice. Grids, with their ability to scale 
+                                                    up and down at will, are a good fit for this.
+                                                </p>
+                                                <h2>
+                                                    Semantic structure
+                                                </h2>
+                                                <p>
+                                                    Semantic tags in HTML are the tags that give the reader and the browser deeper knowledge about the actual purpose of the content being 
+                                                    displayed and the structure is how this is all organised in terms of parent/child relationships. Semantic tags have come about so that 
+                                                    browers are able to represent information in a more meaningful way. When using generic tags like div, there is no context around what 
+                                                    the content may be or relate to. To add context a semantic tag can be used; for example h1 indicates that what is written is a header 
+                                                    for the whole page, or time denotes a date/time. This information is of particular value to search engines that want to represent 
+                                                    meaningful information to their users.
+                                                </p>
+
+                
+                        </div>
+                 </div>
+        </div>
+        <br>
+        <div class='row justify-content-center'>
+            <div class='col-md-6'>
+                <footer onclick="footFunc()">Return to top &#8670;</footer>
+            </div>
+        </div>
+</body>
+</html>

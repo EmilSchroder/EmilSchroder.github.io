@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Skeletal Blogtown</title>
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-  </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Site Redesing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <div class="overlord">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-      <div class="container">
-            
-        <div class="row u-full-width">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-          <!-- <div class="one columns header"><h1>Blogtown</h1></div> -->
-          
-
-              <nav class="navigation">
-                <a class="nav-entry active">Home</a>
-                <a class="nav-entry" href="blog/technical-home-page.html">Technical</a>
-                <a class="nav-entry" href="blog/c1-time-and-habits-blog.html">Time and Habits</a>
-                <a class="nav-entry" href="blog/reflections-homepage.html">Reflections</a>
-              </nav>
-
-           
-
-          <div class="row u-full-width">
-            <div class="two columns sidebar"><h1>BLOGTOWN</h1></div>
-            <div class="ten columns welcome"></div>
-          </div>
-            
-        
-          
-
+</head>
+<body>
+    <div class='container-fluid'>
+        <nav class='navbar fixed-top navbar-expand-lg'>
+            <span class='navbar-brand'>Emil Schroder</span>
+        </nav>
+        <div class='row'>
+            <div class='col-md-4 long' id='tech'>
+                <figure>
+                    <div class='righting'>
+                            <a href='Tech-homepage.html'>
+                                <img src='code-image.png' alt='code' id='codepic' href='Tech-homepage.html'>
+                            </a>
+                        <figcaption>
+                            <a href='Tech-homepage.html'>
+                              <button class='front' type='button' id='brac'></button>
+                            </a>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+            <div class='col-md-4 long' id='mind'>
+                    <figure>
+                        <div class='righting'>
+                            <a href="reflections-homepage.html">
+                                <img src='heart.png' alt='heart'>
+                            </a>
+                            <figcaption>
+                                <a href="reflections-homepage.html">
+                                 <button class='front' type='button' id='heart'></button>
+                                </a>
+                            </figcaption>
+                        </div>
+                    </figure>
+            </div>
+            <div class='col-md-4 long' >
+                    <figure>
+                        <div class='righting'>
+                            <img src='game.png' alt='game'>
+                            <figcaption>
+                                <button class='front' type='button' id='game' href='#'></button>
+                            </figcaption>
+                        </div>
+                    </figure>
+            </div>
         </div>
-
-      </div>
-
-     </div>
-  </body>
-</html>
+    
+        
+    </div>
+</body>
+</html> 

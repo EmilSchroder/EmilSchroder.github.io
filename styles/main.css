@@ -1,75 +1,88 @@
+
 body{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
+    padding-top: 60px;
 }
 
-.overlord{
-    padding: 0px;
-    margin: 0;
-    height: 70px;
+div{
+    padding: 0;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+
+
+figure{
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.righting{
+    display: inline-block;
+}
+
+
+figcaption{
     text-align: center;
 }
 
+footer{
+    color: blue;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
 
-.navigation{
+button.front{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+}
+
+button:focus{
+    outline: 0;
+}
+
+#brac{
+    background-color: green;
+    transition: all .15s linear;
+}
+
+#heart{
+    background-color: red;
+    transition: all .15s linear;
+}
+
+#game{
+    background-color: blue;
+    transition: all 0.15s linear;
+}
+
+#brac:hover, #game:hover, #heart:hover{
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.nondef{
     color: black;
-    background-color: hotpink;
-    padding: 7px 0px 5px 0px;
-    margin: 0;
 }
 
-.blog{
-    text-align: left;
+@media (min-width: 768px){
+
+.long{
+    height: 700px;
+    padding: 0;
+
 }
-
-
-.welcome{
-    height: 600px;
-    background-image: url("../images/town-picture-2.jpg");
-    padding: 0 0 0 0;
-   margin: 0;
-}
-
-.sidebar{
-    
-    color: white;
-    background-color: black;
-    margin: 0;
-}
-
-.nav-entry{
-    padding: 10px 5px 8px 5px;
-    display: inline;
-    color: black;
-    text-decoration: none;
-}
-
-.nav-entry:hover {
-    color: black;
-    background-color: honeydew;
-    margin: 0;
-}
-
-/*.active{
-    background-color: black;
-    color: white;
-    padding: 11px 5px;
-}*/
-
-
-
 .wireframe{
     display: inline-block;
-    width: 265px;
-    margin: 14px 20px 25px 20px;
+    justify-content: inherit;
+    margin: 0 auto;
+}
+#tech, #mind{
+    border-right: 1px rgb(199, 193, 193) solid;
+}
 }
 
-@media (min-width: 550px){
-.sidebar{
-    height: 600px;
-    float: left;
-    text-orientation: upright;
-    writing-mode: vertical-lr;
-    text-align: center;
-}
-}
