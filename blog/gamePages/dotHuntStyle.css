@@ -17,11 +17,22 @@ body{
     height:600px;
     text-align: center;
     vertical-align: middle;
-    visibility: hidden;
+    visibility: visible;
+}
+
+#instructions{
+    float: left;
 }
 
 canvas{
-    border: solid lightgray 1px;
+    border: solid black 1px;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.holder{
+    display: inline-block;
 }
 
 .endReport{
@@ -31,4 +42,12 @@ height: 50%;
 margin: 0 30%;
 margin-top: 25%;
 border-radius: 10%;
+}
+
+.green{
+    text-align: center;
+}
+
+.blue{
+    background-color: lightgray;
 }

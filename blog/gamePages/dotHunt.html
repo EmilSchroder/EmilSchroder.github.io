@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="dotHuntStyle.css">
 
-
+    <script src="../../gameScripts/dotHunt.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -41,19 +41,31 @@
                             </ul>
                         </div>
                 </nav>
-                <div class='row justify-content-center'>
-                    <div class="col-8-md" id='wrapper'>
+
+                <div class="row justify-content-center">
+                    <div class='col-md-2 blue'>Instructions</div>
+                    <div class='col-md-auto green'>
+                        <h1>Dot Hunt</h1>
+                        <canvas id='myCanvas'></canvas>
+                        <script src="../../gameScripts/dotHunt.js"></script>
+                    </div>
+                    <div class='col-md-3 blue'>Scoreboard</div>
+                </div>
+                    <!--<div id='instructions'>
+                        <p>Just some ordinary stuff</p>
+                    </div>
+                    <div id='wrapper'>
                         <canvas id="myCanvas" width='600' height="600"></canvas>
                         <script src="../../gameScripts/dotHunt.js"></script>
                         <div id='overlay'>
                             <div class='endReport'>
-                            <h1>GAME OVER</h1>
-                            <p class="scoreKeep">9999</p>
-                            <button class="reset">rest</button>
+                                <h1>GAME OVER</h1>
+                                <p class="scoreKeep"></p>
+                                <button class="reset"></button>
 
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>-->
+                
 </body>
 </html>
