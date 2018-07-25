@@ -69,6 +69,19 @@ button:focus{
     color: black;
 }
 
+.gameDisplay{
+    height: 400px;
+    margin-top: 0;
+}
+
+.gamePic{
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+
 @media (min-width: 768px){
 
 .long{
