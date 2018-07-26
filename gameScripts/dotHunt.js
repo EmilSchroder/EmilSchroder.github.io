@@ -184,7 +184,6 @@ document.getElementsByClassName("scoreKeep")[0].innerHTML = "Score : " + finalSc
 document.getElementsByClassName("reset")[0].style.visibility = "visible";
 document.getElementsByClassName("reset")[0].innerHTML = "Reset";
 document.getElementById('overlay').style.visibility = "visible";
-document.getElementsByClassName('blue')[1].innerHTML = score; 
 document.getElementsByClassName("reset")[0].onclick = function(){
     document.location.reload();
 }

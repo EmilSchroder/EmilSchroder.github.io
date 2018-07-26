@@ -43,10 +43,19 @@
                 </nav>
 
                 <div class="row justify-content-center">
-                    <div class='col-md-2 d-none d-lg-block blue'>Instructions</div>
-                    <div class='col-md-auto green'>
+                    <div class='col-md-2 d-none d-lg-block instruc'>
+                        <h3>Instructions</h3>
+                        <p>
+                            Ram the red dot into the green dots to convert them.<hr>
+                            Use the <code>a</code> &#38; <code>d</code> keys to move left and right.<br>
+                            Use the <code>w</code> &#38; <code>s</code> keys to move up and down.<hr>
+                            Catch them as fast as you can.
+                        </p>
+                    </div>
+                    <div class='col-md-auto mainCol'>
                         <h1>Dot Hunt</h1>
-                        <canvas id='myCanvas' height="550" width="550"></canvas>  </div>
+                        <canvas id='myCanvas' height="550" width="550"></canvas>  
+                    </div>
                         <script src="../../gameScripts/dotHunt.js"></script>
                         <div id='overlay'>
                                 <div class='endReport'>
@@ -55,7 +64,7 @@
                                     <button class="reset"></button>
                                 </div>  
                         </div>
-                    <div class='col-md-2 d-md-none d-sm-block d-lg-block blue'>Scoreboard</div>
+                    <div class='col-md-2 d-md-none d-sm-block d-lg-block hide'>Scoreboard</div>
                 </div>
                     <!--<div id='instructions'>
                         <p>Just some ordinary stuff</p>
