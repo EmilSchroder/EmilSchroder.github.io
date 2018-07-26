@@ -1,10 +1,10 @@
 //Set up the canvas and context
 
-var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext("2d");
+var myCanvas = document.getElementById('myCanvas');
+var ctx = myCanvas.getContext('2d');
 
 // set initial position
-var mainBall = {x: canvas.width/2,y:canvas.height/2}
+var mainBall = {x: myCanvas.width/2,y:myCanvas.height/2}
 var ballRad = 10;
 
 // set obsticle position
@@ -14,7 +14,7 @@ var markCount = 0;
 
 var obstic = [];
 for (let i=0; i<obNum;i++){
-    obstic[i] = {x:Math.random()*550+20,y:Math.random()*550+20,marked:0};
+    obstic[i] = {x:Math.random()*500+20,y:Math.random()*500+20,marked:0};
 }
 
 
@@ -55,7 +55,7 @@ function isLeft(){
 }
 
 function isRight(){
-    if (keymap["d"] && mainBall.x + ballRad < canvas.width){
+    if (keymap["d"] && mainBall.x + ballRad < myCanvas.width){
         mainBall.x +=5;
     }
 }
@@ -67,7 +67,7 @@ function isUp(){
 }
 
 function isDown(){
-    if (keymap["s"] && mainBall.y + ballRad < canvas.height){
+    if (keymap["s"] && mainBall.y + ballRad < myCanvas.height){
         mainBall.y +=5;
     }
 }
@@ -161,7 +161,7 @@ function moveBall(){
 
 //Function to kick it off
 function draw(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.clearRect(0,0,myCanvas.width,myCanvas.height);
     
     
     moveBall();
@@ -183,7 +183,8 @@ let finalScore = score;
 document.getElementsByClassName("scoreKeep")[0].innerHTML = "Score : " + finalScore;
 document.getElementsByClassName("reset")[0].style.visibility = "visible";
 document.getElementsByClassName("reset")[0].innerHTML = "Reset";
-document.getElementById('overlay').style.visibility = "visible"; 
+document.getElementById('overlay').style.visibility = "visible";
+document.getElementsByClassName('blue')[1].innerHTML = score; 
 document.getElementsByClassName("reset")[0].onclick = function(){
     document.location.reload();
 }

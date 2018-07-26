@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="dotHuntStyle.css">
 
-    <script src="../../gameScripts/dotHunt.js"></script>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
 
         <div class='container-fluid'>
                 <nav class='navbar fixed-top navbar-expand-lg navbar-light bg-light'>
-                        <a class='nondef' href='../index.html'>
+                        <a class='nondef' href='../../index.html'>
                             <span class='navbar-brand'>Emil Schroder</span>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +43,19 @@
                 </nav>
 
                 <div class="row justify-content-center">
-                    <div class='col-md-2 blue'>Instructions</div>
+                    <div class='col-md-2 d-none d-lg-block blue'>Instructions</div>
                     <div class='col-md-auto green'>
                         <h1>Dot Hunt</h1>
-                        <canvas id='myCanvas'></canvas>
+                        <canvas id='myCanvas' height="550" width="550"></canvas>  </div>
                         <script src="../../gameScripts/dotHunt.js"></script>
-                    </div>
-                    <div class='col-md-3 blue'>Scoreboard</div>
+                        <div id='overlay'>
+                                <div class='endReport'>
+                                    <h1>GAME OVER</h1>
+                                    <p class="scoreKeep"></p>
+                                    <button class="reset"></button>
+                                </div>  
+                        </div>
+                    <div class='col-md-2 d-md-none d-sm-block d-lg-block blue'>Scoreboard</div>
                 </div>
                     <!--<div id='instructions'>
                         <p>Just some ordinary stuff</p>
@@ -66,6 +72,5 @@
                             </div>
                         </div>
                     </div>-->
-                
 </body>
 </html>
